@@ -24,7 +24,7 @@ To explore the Solana Music Platform locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/solana-music-platform.git
+   git clone https://github.com/rythmern02/solana-music-platform.git
    cd solana-music-platform
    ```
 
