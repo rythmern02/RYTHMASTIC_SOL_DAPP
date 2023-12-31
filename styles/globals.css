@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.rythmastic_bg {
+  background: url("https://ideogram.ai/api/images/direct/6bfRCaRDThqepztcAZtUlA.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rythm 3s ease infinite;
+}
+
+.rythmastic_bg_2{
+  background: url('/hello.jpeg');
+}
+
+@keyframes rythm {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}
+
+* {
+  color: rgba(var(--foreground-rgb / 255), 1);
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      black,
+      purple,
+
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
